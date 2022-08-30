@@ -1,11 +1,12 @@
+from mimetypes import init
+
 class Control:
  
     def setTv(self,tv):
         self.__tv = tv
     def getTv(self):
         return self.__tv
-
-
+        
     def enlazar(self,tv):
         self.__tv = tv
         self.__tv.setControl(self)
@@ -23,3 +24,5 @@ class Control:
         self.__tv.volumenDown()
     def setCanal(self,canal):
         self.__tv.setCanal(canal)
+    
+    

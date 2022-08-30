@@ -1,10 +1,12 @@
-class Marca ():
+from mimetypes import init
 
-    def __init__(self, nombre):
+class Marca:
+    def __init__(self,nombre):
         self.__nombre = nombre
-    
-    def get_nombre(self):
+
+    def getNombre(self):
         return self.__nombre
 
-    def set_nombre(self, nombre):
+    def setNombre(self,nombre):
         self.__nombre = nombre
+
